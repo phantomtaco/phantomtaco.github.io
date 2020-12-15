@@ -1,0 +1,156 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #bdf777;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('laughingDog.gif');
+  background-size: 900px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #413f66;
+  font-size: 35px;
+  text-align: center;
+}
+
+h3 {
+	opacity: 0.5;
+	letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+}
+
+.joke {
+	font-size: 25px;
+	letter-spacing: 1px;
+	line-height: 40px;
+	margin: 50px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 180px;
+  height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #ceebfd;
+  background: #413f66;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  color: #413f66;
+  background: #ceebfd;
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-position: center top;
+    background-size: 280px;
+    margin: 10px 50px 10px 50px;
+  }
+
+  button {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Old Style
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #bdf777;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('laughingDog.gif');
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.joke {
+  display: inline-flexbox;
+  width: 320px;
+  padding: 100px;
+  height: 200px;
+  background-color: white;
+  border: 5px solid gray;
+  margin: 10;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  width: 260px;
+  height: 60px;
+  font-family: Courier, monospace;
+  font-size: 25px;
+  color: #ceebfd;
+  background: #413f66;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  color: #413f66;
+  background: #ceebfd;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+/* Media Query: Tablet or Smaller 
+@media screen and (max-width: 1000px) {
+  .container {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  button {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+  }
+}
+*/
